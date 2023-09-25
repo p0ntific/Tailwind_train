@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .pagination {
+        @apply inline-block py-1 px-4 cursor-pointer border-[1px] border-gray-300 text-gray-500 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-slate-800 dark:font-bold
+    }
+    .button {
+        @apply transition py-1 px-3 rounded-full border-2 border-blue-600 text-blue-600 hover:text-white hover:bg-blue-600
+        dark:hover:text-pink-600 dark:text-gray-100 dark:font-bold dark:hover:bg-pink-100 dark:border-pink-400
+    }
+
+    .footer-link {
+        @apply after:transition-all after:block after:bg-white after:w-0 after:h-0.5 hover:after:w-full
+    }
+
+    .img {
+        @apply flex items-center justify-center text-white text-xl rounded-2xl dark:text-slate-900
+        dark:font-bold dark:shadow-sm dark:shadow-gray-500
+    }
+
+    .block-start {
+        @apply max-w-screen-lg mx-auto flex justify-center items-start flex-col
+    }
+
+    .block-center {
+        @apply max-w-screen-lg mx-auto flex justify-center items-center flex-col
+    }
+
+    .nav {
+        @apply items-center py-3 px-12 border-b flex justify-between shadow fixed top-0 left-0 w-full bg-white dark:bg-slate-900 z-20
+    }
+
+    .text {
+        @apply text-gray-800 text-xl py-8  dark:text-gray-100 space-x-0.5
+    }
+
+    .divider {
+        @apply w-full border-b border-spacing-1 border-gray-400 dark:border-b-8 dark:border-[#141d26];
+    }
+}
